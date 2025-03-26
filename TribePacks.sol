@@ -1913,11 +1913,11 @@ abstract contract ERC721Enumerable is ERC721, IERC721Enumerable {
     }
 }
 
-// File: contracts/MikulPacks.sol
+// File: contracts/TribePacks.sol
 
 pragma solidity ^0.8.0;
 
-contract MikulPacks is ERC721Enumerable, Ownable, ReentrancyGuard {
+contract TribePacks is ERC721Enumerable, Ownable, ReentrancyGuard {
     using Strings for uint256;
 
     // Contract variables
@@ -2001,19 +2001,19 @@ contract MikulPacks is ERC721Enumerable, Ownable, ReentrancyGuard {
     // Function to calculate the reward based on randomness
 function calculateReward(uint256 rand) private pure returns (uint256) {
     if (rand < 25) {                   // 25% chance
-        return 10000e18;               // 10,000 tokens
+        return 100000e18;               // 100,000 tokens
     } else if (rand < 55) {            // next 30%
-        return 22250e18;               // 22,250 tokens
+        return 222500e18;               // 222,500 tokens
     } else if (rand < 80) {            // next 25%
-        return 48000e18;               // 48,000 tokens
+        return 480000e18;               // 480,000 tokens
     } else if (rand < 95) {            // next 15%
-        return 73000e18;               // 73,000 tokens
+        return 730000e18;               // 730,000 tokens
     } else if (rand < 98) {            // next 3%
-        return 116000e18;              // 116,000 tokens
+        return 1160000e18;              // 1,160,000 tokens
     } else if (rand == 98) {           // next 1%
-        return 220000e18;              // 220,000 tokens
+        return 2200000e18;              // 2,200,000 tokens
     } else {                           // remaining 1%
-        return 420000e18;              // 420,000 tokens
+        return 4200000e18;              // 4,200,000 tokens
     }
 }
 
