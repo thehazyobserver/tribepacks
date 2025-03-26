@@ -676,7 +676,7 @@ function InnerApp() {
                         style={{
                           textAlign: "center",
                           fontSize: 20,
-                          color: "black",
+                          color: "white",
                           marginTop: "60px",
                         }}
                       >
