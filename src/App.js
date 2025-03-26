@@ -421,7 +421,7 @@ function InnerApp() {
           setRewardMessage(
             `YOU HAVE RECEIVED ${parseFloat(
               blockchain.web3.utils.fromWei(amount, "ether")
-            ).toLocaleString()} $MIKUL FROM PACK #${tokenId}.`
+            ).toLocaleString()} $TRIBE FROM PACK #${tokenId}.`
           );
           dispatch(fetchData());
           fetchTotalRewards(blockchain.account);
@@ -440,7 +440,7 @@ function InnerApp() {
 
   const openLootBox = async (tokenId) => {
     try {
-      setRewardMessage(`OPENING $MIKUL PACK #${tokenId}...`);
+      setRewardMessage(`OPENING $TRIBE PACK #${tokenId}...`);
       const tx = await blockchain.LootBoxNFT.methods
         .openLootBox(tokenId)
         .send({ from: blockchain.account, gas: CONFIG.GAS_LIMIT });
@@ -453,11 +453,11 @@ function InnerApp() {
         const txReceipt = await blockchain.web3.eth.getTransactionReceipt(tx.transactionHash);
         fromBlock = txReceipt.blockNumber;
       }
-      setRewardMessage(`$MIKUL PACK #${tokenId} OPENED SUCCESSFULLY. WAITING FOR REWARD....`);
+      setRewardMessage(`$TRIBE PACK #${tokenId} OPENED SUCCESSFULLY. WAITING FOR REWARD....`);
       pollForRewardClaimed(tokenId, fromBlock);
     } catch (error) {
       console.error("Error opening lootbox:", error);
-      setRewardMessage("FAILED TO OPEN $MIKULPACK. CONTACT $MIKUL");
+      setRewardMessage("FAILED TO OPEN $TRIBEPACK. CONTACT $TRIBE");
     }
   };
 
@@ -482,7 +482,7 @@ function InnerApp() {
                 <img src={telegramImage} alt="Telegram" />
               </a>
               <a href="https://passthejoint.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src={passTheJointImage} alt="Pass the $MIKUL" />
+                <img src={passTheJointImage} alt="Pass the $TRIBE" />
               </a>
             </SocialIcons>
             <ConnectWalletButton onClick={handleConnectWallet} disabled={!configLoaded}>
@@ -500,7 +500,7 @@ function InnerApp() {
           )}
           {location.pathname === "/leaderboard" && (
             <Link to="/">
-              <StyledButton>OPEN $MIKUL PACKS</StyledButton>
+              <StyledButton>OPEN $TRIBE PACKS</StyledButton>
             </Link>
           )}
           {/* Always visible */}
@@ -509,7 +509,7 @@ function InnerApp() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <StyledButton>GET MORE $MIKUL PACKS</StyledButton>
+            <StyledButton>GET MORE $TRIBE PACKS</StyledButton>
           </a>
         </MainActions>
 
@@ -545,7 +545,7 @@ function InnerApp() {
       color: "white",
     }}
   >
-    YOUR $MIKUL PACKS
+    YOUR $TRIBE PACKS
   </s.TextTitle>
   <s.TextSubTitle
     style={{
@@ -554,7 +554,7 @@ function InnerApp() {
       color: "white",
     }}
   >
-    OPEN TO RECEIVE 10,000 TO 420,000 $MIKUL
+    OPEN TO RECEIVE 100,000 TO 4,200,000 $TRIBE
   </s.TextSubTitle>
   <s.TextSubTitle
     style={{
@@ -563,7 +563,7 @@ function InnerApp() {
       color: "white",
     }}
   >
-    PACKS CONTAIN ON AVERAGE 42,000 $MIKUL
+    PACKS CONTAIN ON AVERAGE 420,000 $TRIBE
   </s.TextSubTitle>
   <s.TextDescription
     style={{
@@ -573,7 +573,7 @@ function InnerApp() {
       color: "white",
     }}
   >
-    TOTAL $MIKUL RECEIVED: <HighlightText>{totalRewards} $MIKUL</HighlightText>
+    TOTAL $TRIBE RECEIVED: <HighlightText>{totalRewards} $TRIBE</HighlightText>
   </s.TextDescription>
   {blockchain.account && (
     <>
@@ -641,10 +641,10 @@ function InnerApp() {
                                   selected={selectedToken === tokenId}
                                   onClick={() => setSelectedToken(tokenId)}
                                 />
-                                <NFTText>{`$MIKUL PACK #${tokenId}`}</NFTText>
+                                <NFTText>{`$TRIBE PACK #${tokenId}`}</NFTText>
                                 <NFTButtonContainer>
                                   <OpenJOINTPACKS onClick={() => openLootBox(tokenId)}>
-                                    OPEN $MIKUL PACK
+                                    OPEN $TRIBE PACK
                                   </OpenJOINTPACKS>
                                 </NFTButtonContainer>
                               </NFTBox>
@@ -659,14 +659,14 @@ function InnerApp() {
                                 marginBottom: "20px",
                               }}
                             >
-                              NO $MIKUL PACKS FOUND. DON'T STOP THE PARTY!
+                              NO $TRIBE PACKS FOUND. DON'T STOP THE PARTY!
                             </s.TextDescription>
                             <a
                               href="https://paintswap.io/sonic/collections/0xe359c086ff6ebac406a77063ef4c47a6565d3a05/listings"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <OpenJOINTPACKS>GET MORE $MIKUL PACKS</OpenJOINTPACKS>
+                              <OpenJOINTPACKS>GET MORE $TRIBE PACKS</OpenJOINTPACKS>
                             </a>
                           </StatsContainer>
                         )}
@@ -680,7 +680,7 @@ function InnerApp() {
                           marginTop: "60px",
                         }}
                       >
-                        PLEASE CONNECT YOUR WALLET TO VIEW YOUR $MIKUL PACKS.
+                        PLEASE CONNECT YOUR WALLET TO VIEW YOUR $TRIBE PACKS.
                       </s.TextDescription>
                     )}
                   </>

@@ -1,0 +1,15 @@
+{
+  "CONTRACT_ADDRESS": "0xE359c086fF6eBaC406A77063Ef4C47a6565D3A05",
+  "SCAN_LINK": "https://sonicscan.org/address/0xe359c086ff6ebac406a77063ef4c47a6565d3a05",
+  "NETWORK": {
+    "NAME": "Sonic Mainnet",
+    "SYMBOL": "S",
+    "ID": 146
+  },
+  "NFT_NAME": "MPacks",
+  "SYMBOL": "MPacks",
+  "GAS_LIMIT": 1000000,
+  "MARKETPLACE": "Paintswap",
+  "MARKETPLACE_LINK": "https://paintswap.finance/marketplace",
+  "SHOW_BACKGROUND": true
+}

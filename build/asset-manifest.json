@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.19b5e10d.js",
+    "static/js/453.f68b4a36.chunk.js": "/static/js/453.f68b4a36.chunk.js",
+    "static/media/bg.png": "/static/media/bg.ea3f6b2d222fefa3b2a1.png",
+    "static/media/paintswap.png": "/static/media/paintswap.4c239924579b32b46ce7.png",
+    "static/media/PassTheJoint.gif": "/static/media/PassTheJoint.bb4206bcb7fe3d39cd36.gif",
+    "static/media/JOINTPACK.jpg": "/static/media/JOINTPACK.bdd4d7f0ef19e4d59674.jpg",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.19b5e10d.js.map": "/static/js/main.19b5e10d.js.map",
+    "453.f68b4a36.chunk.js.map": "/static/js/453.f68b4a36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.19b5e10d.js"
+  ]
+}
