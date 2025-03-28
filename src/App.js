@@ -469,7 +469,7 @@ function InnerApp() {
           <HeaderWrapper>
             <SocialIcons>
               <a
-                href="https://paintswap.io/sonic/collections/0x9a303054c302b180772a96caded9858c7ab92e99/listings"
+                href="https://paintswap.io/sonic/collections/0x1f000cc0e2829f2ebf170cc1be1dfff268095658/listings"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -505,7 +505,7 @@ function InnerApp() {
           )}
           {/* Always visible */}
           <a
-            href="https://paintswap.io/sonic/collections/0xe359c086ff6ebac406a77063ef4c47a6565d3a05/listings"
+            href="https://paintswap.io/sonic/collections/0x1f000cc0e2829f2ebf170cc1be1dfff268095658/listings"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -662,7 +662,7 @@ function InnerApp() {
                               NO $TRIBE PACKS FOUND. DON'T STOP THE PARTY!
                             </s.TextDescription>
                             <a
-                              href="https://paintswap.io/sonic/collections/0xe359c086ff6ebac406a77063ef4c47a6565d3a05/listings"
+                              href="https://paintswap.io/sonic/collections/0x1f000cc0e2829f2ebf170cc1be1dfff268095658/listings"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
